@@ -1,3 +1,4 @@
+import {writeJsonSync, readJsonSync} from "fs-extra";
 console.log (process.argv)
 if (process.argv[2]==="--help")
 {
@@ -24,10 +25,13 @@ const p:IPersonne={
     qualite:"joyeuse"
 }
 
-console.log(p)
+console. log(p)
 const p2: IPersonne = { ...p,
     nom : "Laforge",
     prenom : "Thomas"
 }
 p2.age = 225252
 console.log(p2)
+
+writeJsonSync('./personne.json', p)
+console.log(readJsonSync('./personne.json'))
