@@ -27,7 +27,6 @@ Ensuite définir :
         ]
     }
 5- crée un dossier src et crée dedans un fichier index.ts
-    console.log('Hello world');
 6- git init
 7- git ignore node_modules et dist
 8- git add .
