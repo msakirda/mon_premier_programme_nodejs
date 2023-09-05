@@ -1,4 +1,5 @@
 import {writeJsonSync, readJsonSync} from "fs-extra";
+import dot from "dotenv/config"
 console.log (process.argv)
 if (process.argv[2]==="--help")
 {
@@ -35,3 +36,5 @@ console.log(p2)
 
 writeJsonSync('./personne.json', p)
 console.log(readJsonSync('./personne.json'))
+
+console.log('env', process.env)
